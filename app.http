@@ -1,0 +1,28 @@
+### 1 get list of players
+
+
+get http://localhost:3000/players/ 
+
+### 2 playerInfo based on playerId
+get http://localhost:3000/players/2/
+
+### 3 update player based on playerId
+put http://localhost:3000/players/1/
+Content-Type: application/json
+
+{
+  "playerName": "Raju"
+}
+### 4 matchDetails basedOn matchId
+get http://localhost:3000/matches/18/
+
+
+### 5 matchesList of Player
+get http://localhost:3000/players/1/matches/ 
+
+### 6 list of players of a specific match
+get http://localhost:3000/matches/1/players/
+
+### 7 statistics of the total score, fours, sixes of a 
+# specific player based on the player ID
+get http://localhost:3000/players/1/playerScores/
